@@ -1,0 +1,2324 @@
+nohup: ignoring input
+Running epoch 0:   0%|          | 0/97 [00:00<?, ?it/s]train_multi_objective.py:69: UserWarning: Anomaly Detection has been enabled. This mode will increase the runtime and should only be enabled for debugging.
+  with autograd.detect_anomaly():
+
+--------------datadirs: IMG_4809.txt---------------
+ratio 0.961066431310604
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1168.0470], device='cuda:0') tensor([2761.0737], device='cuda:0') tensor([2089.9529], device='cuda:0') tensor([3412.9263], device='cuda:0')
+height, width is  [325.92627] [460.95294]
+bboxes is  [[ 59 -13 980 637]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.1281], device='cuda:0') tensor([0.9573], device='cuda:0')
+box_height, box_width is  650 921
+y0, y1, x0, x1 is  2761 3411 1168 2089
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2761 3411 1168 2089
+-----scale the patch-----
+---------- zoom out ------------
+/data/yipengao/anaconda3/envs/physicalAttack/lib/python3.6/site-packages/torch/nn/functional.py:3447: UserWarning: Default grid_sample and affine_grid behavior has changed to align_corners=False since 1.3.0. Please specify align_corners=True if the old behavior is desired. See the documentation of grid_sample for details.
+  warnings.warn("Default grid_sample and affine_grid behavior has changed "
+/data/yipengao/anaconda3/envs/physicalAttack/lib/python3.6/site-packages/torch/nn/functional.py:3384: UserWarning: Default grid_sample and affine_grid behavior has changed to align_corners=False since 1.3.0. Please specify align_corners=True if the old behavior is desired. See the documentation of grid_sample for details.
+  warnings.warn("Default grid_sample and affine_grid behavior has changed "
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2761 3411 1168 2089
+bboxes size is  -13 637 59 980
+patch_y1-patch_y0, patch_x1-patch_x0 is  650 921
+bboxes height and width is  650 921
+datadirs is  ('IMG_4809.txt',)
+Running epoch 0:   1%|1         | 1/97 [00:01<01:53,  1.19s/it]
+--------------datadirs: IMG_4764.txt---------------
+ratio 0.6094370650375747
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([965.7170], device='cuda:0') tensor([2166.3252], device='cuda:0') tensor([1468.2830], device='cuda:0') tensor([2521.6748], device='cuda:0')
+height, width is  [177.6748] [251.28296]
+bboxes is  [[268 134 771 489]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.0694], device='cuda:0') tensor([1.7560], device='cuda:0')
+box_height, box_width is  355 503
+y0, y1, x0, x1 is  2166 2521 965 1468
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2166 2521 965 1468
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2166 2521 965 1468
+bboxes size is  134 489 268 771
+patch_y1-patch_y0, patch_x1-patch_x0 is  355 503
+bboxes height and width is  355 503
+-----rotation the patch_real-----
+/data/yipengao/code/CAAD2019-Adversarial-Patch/utils.py:143: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  cls_confs = torch.nn.Softmax()(Variable(output[5:5+num_classes].transpose(0,1))).data
+Running epoch 0:   2%|2         | 2/97 [00:02<02:24,  1.53s/it]
+--------------datadirs: IMG_4793.txt---------------
+ratio 0.47604066057184685
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([2163.6633], device='cuda:0') tensor([1139.1155], device='cuda:0') tensor([2658.3367], device='cuda:0') tensor([1488.8845], device='cuda:0')
+height, width is  [174.88452] [247.33667]
+bboxes is  [[272 137 767 486]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.1024], device='cuda:0') tensor([1.7840], device='cuda:0')
+box_height, box_width is  349 495
+y0, y1, x0, x1 is  1139 1488 2163 2658
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1139 1488 2163 2658
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1139 1488 2163 2658
+bboxes size is  137 486 272 767
+patch_y1-patch_y0, patch_x1-patch_x0 is  349 495
+bboxes height and width is  349 495
+-----rotation the patch_real-----
+Running epoch 0:   3%|3         | 3/97 [00:04<02:12,  1.41s/it]
+--------------datadirs: IMG_4855.txt---------------
+ratio 0.3366104621758011
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1240.6189], device='cuda:0') tensor([3199.5183], device='cuda:0') tensor([1895.3811], device='cuda:0') tensor([3662.4817], device='cuda:0')
+height, width is  [231.48169] [327.3811]
+bboxes is  [[192  80 847 543]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.5884], device='cuda:0') tensor([1.3478], device='cuda:0')
+box_height, box_width is  463 655
+y0, y1, x0, x1 is  3199 3662 1240 1895
+-----boundary value discussion-----
+y0, y1, x0, x1 is  3199 3662 1240 1895
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  3199 3662 1240 1895
+bboxes size is  80 543 192 847
+patch_y1-patch_y0, patch_x1-patch_x0 is  463 655
+bboxes height and width is  463 655
+-----rotation the patch_real-----
+Running epoch 0:   4%|4         | 4/97 [00:05<02:10,  1.40s/it]
+--------------datadirs: IMG_4894.txt---------------
+ratio 0.6130397266777662
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([828.6142], device='cuda:0') tensor([2369.3738], device='cuda:0') tensor([1325.3859], device='cuda:0') tensor([2720.6262], device='cuda:0')
+height, width is  [175.62622] [248.38583]
+bboxes is  [[271 136 768 487]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.0935], device='cuda:0') tensor([1.7765], device='cuda:0')
+box_height, box_width is  351 497
+y0, y1, x0, x1 is  2369 2720 828 1325
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2369 2720 828 1325
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2369 2720 828 1325
+bboxes size is  136 487 271 768
+patch_y1-patch_y0, patch_x1-patch_x0 is  351 497
+bboxes height and width is  351 497
+-----rotation the patch_real-----
+Running epoch 0:   5%|5         | 5/97 [00:07<02:14,  1.46s/it]
+--------------datadirs: IMG_4781.txt---------------
+ratio 0.6955660874548312
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([334.8757], device='cuda:0') tensor([1646.8212], device='cuda:0') tensor([1379.1244], device='cuda:0') tensor([2385.1787], device='cuda:0')
+height, width is  [369.17877] [522.1244]
+bboxes is  [[  -2  -57 1042  681]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.9959], device='cuda:0') tensor([0.8451], device='cuda:0')
+box_height, box_width is  738 1044
+y0, y1, x0, x1 is  1646 2384 334 1378
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1646 2384 334 1378
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  2 2 57 57
+applier.size() is  torch.Size([1, 3, 738, 1044])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1646 2384 334 1378
+y0, y1, x0, x1 is  1646 2384 334 1378
+-----rotation the patch_real-----
+Running epoch 0:   6%|6         | 6/97 [00:08<02:17,  1.51s/it]
+--------------datadirs: IMG_4820.txt---------------
+ratio 0.7129501098514889
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1232.9106], device='cuda:0') tensor([903.4217], device='cuda:0') tensor([2199.0894], device='cuda:0') tensor([1586.5784], device='cuda:0')
+height, width is  [341.57834] [483.08936]
+bboxes is  [[  36  -29 1003  653]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.0764], device='cuda:0') tensor([0.9134], device='cuda:0')
+box_height, box_width is  682 967
+y0, y1, x0, x1 is  903 1585 1232 2199
+-----boundary value discussion-----
+y0, y1, x0, x1 is  903 1585 1232 2199
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  903 1585 1232 2199
+bboxes size is  -29 653 36 1003
+patch_y1-patch_y0, patch_x1-patch_x0 is  682 967
+bboxes height and width is  682 967
+datadirs is  ('IMG_4820.txt',)
+Running epoch 0:   7%|7         | 7/97 [00:09<01:40,  1.12s/it]
+--------------datadirs: IMG_4780.txt---------------
+ratio 0.7382682028066062
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([364.6118], device='cuda:0') tensor([1631.7861], device='cuda:0') tensor([1649.3882], device='cuda:0') tensor([2540.2139], device='cuda:0')
+height, width is  [454.21387] [642.3882]
+bboxes is  [[-122 -142 1162  766]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.8095], device='cuda:0') tensor([0.6869], device='cuda:0')
+box_height, box_width is  908 1284
+y0, y1, x0, x1 is  1631 2539 364 1648
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1631 2539 364 1648
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  122 122 142 142
+applier.size() is  torch.Size([1, 3, 908, 1284])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1631 2539 364 1648
+y0, y1, x0, x1 is  1631 2539 364 1648
+-----rotation the patch_real-----
+Running epoch 0:   8%|8         | 8/97 [00:10<01:41,  1.15s/it]
+--------------datadirs: IMG_4788.txt---------------
+ratio 0.450289465970913
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1337.0890], device='cuda:0') tensor([2072.3154], device='cuda:0') tensor([1802.9110], device='cuda:0') tensor([2401.6846], device='cuda:0')
+height, width is  [164.68457] [232.91101]
+bboxes is  [[287 147 752 476]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.2326], device='cuda:0') tensor([1.8945], device='cuda:0')
+box_height, box_width is  329 465
+y0, y1, x0, x1 is  2072 2401 1337 1802
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2072 2401 1337 1802
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2072 2401 1337 1802
+bboxes size is  147 476 287 752
+patch_y1-patch_y0, patch_x1-patch_x0 is  329 465
+bboxes height and width is  329 465
+-----rotation the patch_real-----
+Running epoch 0:   9%|9         | 9/97 [00:11<01:45,  1.20s/it]
+--------------datadirs: IMG_4852.txt---------------
+ratio 0.46377416718374576
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([893.0739], device='cuda:0') tensor([1612.6482], device='cuda:0') tensor([1572.9260], device='cuda:0') tensor([2093.3518], device='cuda:0')
+height, width is  [240.3518] [339.92606]
+bboxes is  [[180  71 859 552]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.5297], device='cuda:0') tensor([1.2981], device='cuda:0')
+box_height, box_width is  481 679
+y0, y1, x0, x1 is  1612 2093 893 1572
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1612 2093 893 1572
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1612 2093 893 1572
+bboxes size is  71 552 180 859
+patch_y1-patch_y0, patch_x1-patch_x0 is  481 679
+bboxes height and width is  481 679
+-----rotation the patch_real-----
+Running epoch 0:  10%|#         | 10/97 [00:12<01:44,  1.20s/it]
+--------------datadirs: IMG_4757.txt---------------
+ratio 0.4500773744419219
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1271.1937], device='cuda:0') tensor([2473.6824], device='cuda:0') tensor([1540.8063], device='cuda:0') tensor([2664.3176], device='cuda:0')
+height, width is  [95.31763] [134.80627]
+bboxes is  [[385 216 654 407]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([3.8574], device='cuda:0') tensor([3.2733], device='cuda:0')
+box_height, box_width is  191 269
+y0, y1, x0, x1 is  2473 2664 1271 1540
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2473 2664 1271 1540
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2473 2664 1271 1540
+bboxes size is  216 407 385 654
+patch_y1-patch_y0, patch_x1-patch_x0 is  191 269
+bboxes height and width is  191 269
+-----rotation the patch_real-----
+Running epoch 0:  11%|#1        | 11/97 [00:14<01:44,  1.21s/it]
+--------------datadirs: IMG_4847.txt---------------
+ratio 0.4286711331382581
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1171.7788], device='cuda:0') tensor([2312.4497], device='cuda:0') tensor([1736.2212], device='cuda:0') tensor([2711.5503], device='cuda:0')
+height, width is  [199.5503] [282.2212]
+bboxes is  [[237 112 802 511]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.8425], device='cuda:0') tensor([1.5635], device='cuda:0')
+box_height, box_width is  399 565
+y0, y1, x0, x1 is  2312 2711 1171 1736
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2312 2711 1171 1736
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2312 2711 1171 1736
+bboxes size is  112 511 237 802
+patch_y1-patch_y0, patch_x1-patch_x0 is  399 565
+bboxes height and width is  399 565
+-----rotation the patch_real-----
+Running epoch 0:  12%|#2        | 12/97 [00:15<01:43,  1.22s/it]
+--------------datadirs: IMG_4796.txt---------------
+ratio 0.6428881975544224
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([375.6429], device='cuda:0') tensor([1556.2324], device='cuda:0') tensor([1342.3571], device='cuda:0') tensor([2239.7676], device='cuda:0')
+height, width is  [341.76758] [483.35706]
+bboxes is  [[  36  -29 1003  653]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.0758], device='cuda:0') tensor([0.9129], device='cuda:0')
+box_height, box_width is  682 967
+y0, y1, x0, x1 is  1556 2238 375 1342
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1556 2238 375 1342
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1556 2238 375 1342
+bboxes size is  -29 653 36 1003
+patch_y1-patch_y0, patch_x1-patch_x0 is  682 967
+bboxes height and width is  682 967
+datadirs is  ('IMG_4796.txt',)
+Running epoch 0:  13%|#3        | 13/97 [00:15<01:20,  1.05it/s]
+--------------datadirs: IMG_4887.txt---------------
+ratio 0.6792087213805363
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1146.7966], device='cuda:0') tensor([2261.7451], device='cuda:0') tensor([1829.2034], device='cuda:0') tensor([2744.2549], device='cuda:0')
+height, width is  [241.25488] [341.20337]
+bboxes is  [[178  70 861 553]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.5240], device='cuda:0') tensor([1.2932], device='cuda:0')
+box_height, box_width is  483 683
+y0, y1, x0, x1 is  2261 2744 1146 1829
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2261 2744 1146 1829
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2261 2744 1146 1829
+bboxes size is  70 553 178 861
+patch_y1-patch_y0, patch_x1-patch_x0 is  483 683
+bboxes height and width is  483 683
+-----rotation the patch_real-----
+Running epoch 0:  14%|#4        | 14/97 [00:16<01:24,  1.01s/it]
+--------------datadirs: IMG_4907.txt---------------
+ratio 0.7175594839602187
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([2634.8474], device='cuda:0') tensor([1509.8013], device='cuda:0') tensor([2887.1526], device='cuda:0') tensor([1688.1987], device='cuda:0')
+height, width is  [89.19873] [126.15259]
+bboxes is  [[393 222 646 401]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([4.1220], device='cuda:0') tensor([3.4978], device='cuda:0')
+box_height, box_width is  179 253
+y0, y1, x0, x1 is  1509 1688 2634 2887
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1509 1688 2634 2887
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1509 1688 2634 2887
+bboxes size is  222 401 393 646
+patch_y1-patch_y0, patch_x1-patch_x0 is  179 253
+bboxes height and width is  179 253
+-----rotation the patch_real-----
+Running epoch 0:  15%|#5        | 15/97 [00:18<01:32,  1.12s/it]
+--------------datadirs: IMG_4807.txt---------------
+ratio 0.6736712529951234
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1016.7670], device='cuda:0') tensor([1649.4313], device='cuda:0') tensor([2093.2329], device='cuda:0') tensor([2410.5688], device='cuda:0')
+height, width is  [380.5688] [538.2329]
+bboxes is  [[ -18  -68 1058  692]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.9661], device='cuda:0') tensor([0.8198], device='cuda:0')
+box_height, box_width is  760 1076
+y0, y1, x0, x1 is  1649 2409 1016 2092
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1649 2409 1016 2092
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  18 18 68 69
+applier.size() is  torch.Size([1, 3, 761, 1076])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1649 2409 1016 2092
+y0, y1, x0, x1 is  1649 2409 1016 2092
+-----rotation the patch_real-----
+Running epoch 0:  16%|#6        | 16/97 [00:19<01:34,  1.17s/it]
+--------------datadirs: IMG_4756.txt---------------
+ratio 0.7602035316771062
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1904.7131], device='cuda:0') tensor([1083.7163], device='cuda:0') tensor([2635.2869], device='cuda:0') tensor([1600.2837], device='cuda:0')
+height, width is  [258.2837] [365.28687]
+bboxes is  [[154  53 885 570]]
+-----paste the resized patch on the car-----
+size[3] > size[2]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.4235], device='cuda:0') tensor([1.2080], device='cuda:0')
+box_height, box_width is  517 731
+y0, y1, x0, x1 is  1083 1600 1904 2635
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1083 1600 1904 2635
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1083 1600 1904 2635
+bboxes size is  53 570 154 885
+patch_y1-patch_y0, patch_x1-patch_x0 is  517 731
+bboxes height and width is  517 731
+-----rotation the patch_real-----
+Running epoch 0:  18%|#7        | 17/97 [00:20<01:35,  1.20s/it]
+--------------datadirs: IMG_4892.txt---------------
+ratio 0.6404565285827806
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1017.0131], device='cuda:0') tensor([2067.2417], device='cuda:0') tensor([1714.9869], device='cuda:0') tensor([2560.7583], device='cuda:0')
+height, width is  [246.7583] [348.9869]
+bboxes is  [[171  65 868 558]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.4900], device='cuda:0') tensor([1.2644], device='cuda:0')
+box_height, box_width is  493 697
+y0, y1, x0, x1 is  2067 2560 1017 1714
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2067 2560 1017 1714
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2067 2560 1017 1714
+bboxes size is  65 558 171 868
+patch_y1-patch_y0, patch_x1-patch_x0 is  493 697
+bboxes height and width is  493 697
+-----rotation the patch_real-----
+Running epoch 0:  19%|#8        | 18/97 [00:22<01:37,  1.24s/it]
+--------------datadirs: IMG_4784.txt---------------
+ratio 0.520749169405513
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1112.7864], device='cuda:0') tensor([741.3439], device='cuda:0') tensor([1765.2136], device='cuda:0') tensor([1202.6561], device='cuda:0')
+height, width is  [230.6561] [326.21362]
+bboxes is  [[193  81 846 542]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.5940], device='cuda:0') tensor([1.3527], device='cuda:0')
+box_height, box_width is  461 653
+y0, y1, x0, x1 is  741 1202 1112 1765
+-----boundary value discussion-----
+y0, y1, x0, x1 is  741 1202 1112 1765
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  741 1202 1112 1765
+bboxes size is  81 542 193 846
+patch_y1-patch_y0, patch_x1-patch_x0 is  461 653
+bboxes height and width is  461 653
+-----rotation the patch_real-----
+Running epoch 0:  20%|#9        | 19/97 [00:23<01:37,  1.25s/it]
+--------------datadirs: IMG_4862.txt---------------
+ratio 0.3813707314919038
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1919.1722], device='cuda:0') tensor([2898.6570], device='cuda:0') tensor([2502.8279], device='cuda:0') tensor([3311.3430], device='cuda:0')
+height, width is  [206.34302] [291.82782]
+bboxes is  [[228 105 811 518]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.7819], device='cuda:0') tensor([1.5120], device='cuda:0')
+box_height, box_width is  413 583
+y0, y1, x0, x1 is  2898 3311 1919 2502
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2898 3311 1919 2502
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2898 3311 1919 2502
+bboxes size is  105 518 228 811
+patch_y1-patch_y0, patch_x1-patch_x0 is  413 583
+bboxes height and width is  413 583
+-----rotation the patch_real-----
+Running epoch 0:  21%|##        | 20/97 [00:24<01:35,  1.24s/it]
+--------------datadirs: IMG_4801.txt---------------
+ratio 0.6840090405444185
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1166.9814], device='cuda:0') tensor([3137.0879], device='cuda:0') tensor([1591.0186], device='cuda:0') tensor([3436.9121], device='cuda:0')
+height, width is  [149.91211] [212.01855]
+bboxes is  [[307 162 732 461]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.4526], device='cuda:0') tensor([2.0812], device='cuda:0')
+box_height, box_width is  299 425
+y0, y1, x0, x1 is  3137 3436 1166 1591
+-----boundary value discussion-----
+y0, y1, x0, x1 is  3137 3436 1166 1591
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  3137 3436 1166 1591
+bboxes size is  162 461 307 732
+patch_y1-patch_y0, patch_x1-patch_x0 is  299 425
+bboxes height and width is  299 425
+-----rotation the patch_real-----
+Running epoch 0:  22%|##1       | 21/97 [00:25<01:36,  1.27s/it]
+--------------datadirs: IMG_4883.txt---------------
+ratio 0.5578296192394395
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1163.4664], device='cuda:0') tensor([1854.5621], device='cuda:0') tensor([1662.5336], device='cuda:0') tensor([2207.4377], device='cuda:0')
+height, width is  [176.4378] [249.53357]
+bboxes is  [[270 135 769 488]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.0839], device='cuda:0') tensor([1.7683], device='cuda:0')
+box_height, box_width is  353 499
+y0, y1, x0, x1 is  1854 2207 1163 1662
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1854 2207 1163 1662
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1854 2207 1163 1662
+bboxes size is  135 488 270 769
+patch_y1-patch_y0, patch_x1-patch_x0 is  353 499
+bboxes height and width is  353 499
+-----rotation the patch_real-----
+Running epoch 0:  23%|##2       | 22/97 [00:27<01:37,  1.30s/it]
+--------------datadirs: IMG_4865.txt---------------
+ratio 0.6271316292876599
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1593.5505], device='cuda:0') tensor([1409.3589], device='cuda:0') tensor([2534.4495], device='cuda:0') tensor([2074.6411], device='cuda:0')
+height, width is  [332.6411] [470.44946]
+bboxes is  [[ 49 -20 990 644]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.1053], device='cuda:0') tensor([0.9379], device='cuda:0')
+box_height, box_width is  664 941
+y0, y1, x0, x1 is  1409 2073 1593 2534
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1409 2073 1593 2534
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1409 2073 1593 2534
+bboxes size is  -20 644 49 990
+patch_y1-patch_y0, patch_x1-patch_x0 is  664 941
+bboxes height and width is  664 941
+datadirs is  ('IMG_4865.txt',)
+Running epoch 0:  24%|##3       | 23/97 [00:27<01:19,  1.08s/it]
+--------------datadirs: IMG_4839.txt---------------
+ratio 0.4857839810779798
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([397.1432], device='cuda:0') tensor([797.4851], device='cuda:0') tensor([1730.8568], device='cuda:0') tensor([1740.5149], device='cuda:0')
+height, width is  [471.5149] [666.8568]
+bboxes is  [[-146 -159 1186  783]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.7798], device='cuda:0') tensor([0.6617], device='cuda:0')
+box_height, box_width is  942 1332
+y0, y1, x0, x1 is  797 1739 397 1729
+-----boundary value discussion-----
+y0, y1, x0, x1 is  797 1739 397 1729
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  146 147 159 160
+applier.size() is  torch.Size([1, 3, 943, 1333])
+patch_y0, patch_y1, patch_x0, patch_x1 is  797 1739 397 1729
+y0, y1, x0, x1 is  797 1739 397 1729
+-----rotation the patch_real-----
+Running epoch 0:  25%|##4       | 24/97 [00:28<01:19,  1.09s/it]
+--------------datadirs: IMG_4800.txt---------------
+ratio 0.6988757902172348
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([742.0015], device='cuda:0') tensor([2758.9707], device='cuda:0') tensor([1089.9984], device='cuda:0') tensor([3005.0293], device='cuda:0')
+height, width is  [123.0293] [173.99844]
+bboxes is  [[346 188 693 435]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.9885], device='cuda:0') tensor([2.5360], device='cuda:0')
+box_height, box_width is  247 347
+y0, y1, x0, x1 is  2758 3005 742 1089
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2758 3005 742 1089
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2758 3005 742 1089
+bboxes size is  188 435 346 693
+patch_y1-patch_y0, patch_x1-patch_x0 is  247 347
+bboxes height and width is  247 347
+-----rotation the patch_real-----
+Running epoch 0:  26%|##5       | 25/97 [00:30<01:21,  1.14s/it]
+--------------datadirs: IMG_4880.txt---------------
+ratio 0.580205871648885
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1011.6102], device='cuda:0') tensor([2302.6841], device='cuda:0') tensor([1476.3898], device='cuda:0') tensor([2631.3159], device='cuda:0')
+height, width is  [164.31592] [232.3898]
+bboxes is  [[287 147 752 476]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.2376], device='cuda:0') tensor([1.8988], device='cuda:0')
+box_height, box_width is  329 465
+y0, y1, x0, x1 is  2302 2631 1011 1476
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2302 2631 1011 1476
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2302 2631 1011 1476
+bboxes size is  147 476 287 752
+patch_y1-patch_y0, patch_x1-patch_x0 is  329 465
+bboxes height and width is  329 465
+-----rotation the patch_real-----
+Running epoch 0:  27%|##6       | 26/97 [00:31<01:26,  1.21s/it]
+--------------datadirs: IMG_4761.txt---------------
+ratio 0.591487531834681
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1018.0700], device='cuda:0') tensor([2386.2717], device='cuda:0') tensor([2227.9299], device='cuda:0') tensor([3241.7283], device='cuda:0')
+height, width is  [427.72827] [604.92993]
+bboxes is  [[ -84 -115 1124  739]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.8596], device='cuda:0') tensor([0.7294], device='cuda:0')
+box_height, box_width is  854 1208
+y0, y1, x0, x1 is  2386 3240 1018 2226
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2386 3240 1018 2226
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  84 85 115 116
+applier.size() is  torch.Size([1, 3, 855, 1209])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2386 3240 1018 2226
+y0, y1, x0, x1 is  2386 3240 1018 2226
+-----rotation the patch_real-----
+Running epoch 0:  28%|##7       | 27/97 [00:32<01:26,  1.24s/it]
+--------------datadirs: IMG_4760.txt---------------
+ratio 0.5189870143185458
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1318.3351], device='cuda:0') tensor([2240.7825], device='cuda:0') tensor([1983.6649], device='cuda:0') tensor([2711.2175], device='cuda:0')
+height, width is  [235.21753] [332.66492]
+bboxes is  [[187  76 852 547]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.5631], device='cuda:0') tensor([1.3264], device='cuda:0')
+box_height, box_width is  471 665
+y0, y1, x0, x1 is  2240 2711 1318 1983
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2240 2711 1318 1983
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2240 2711 1318 1983
+bboxes size is  76 547 187 852
+patch_y1-patch_y0, patch_x1-patch_x0 is  471 665
+bboxes height and width is  471 665
+-----rotation the patch_real-----
+Running epoch 0:  29%|##8       | 28/97 [00:34<01:27,  1.26s/it]
+--------------datadirs: IMG_4759.txt---------------
+ratio 0.5628304385347128
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([760.1244], device='cuda:0') tensor([2192.0981], device='cuda:0') tensor([1633.8756], device='cuda:0') tensor([2809.9019], device='cuda:0')
+height, width is  [308.90186] [436.8756]
+bboxes is  [[ 83   3 956 620]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.1903], device='cuda:0') tensor([1.0100], device='cuda:0')
+box_height, box_width is  617 873
+y0, y1, x0, x1 is  2192 2809 760 1633
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2192 2809 760 1633
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2192 2809 760 1633
+bboxes size is  3 620 83 956
+patch_y1-patch_y0, patch_x1-patch_x0 is  617 873
+bboxes height and width is  617 873
+-----rotation the patch_real-----
+Running epoch 0:  30%|##9       | 29/97 [00:35<01:25,  1.26s/it]
+--------------datadirs: IMG_4901.txt---------------
+ratio 0.43335807165471646
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([340.8627], device='cuda:0') tensor([2291.5493], device='cuda:0') tensor([837.1373], device='cuda:0') tensor([2642.4507], device='cuda:0')
+height, width is  [175.45068] [248.13727]
+bboxes is  [[271 136 768 487]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.0956], device='cuda:0') tensor([1.7783], device='cuda:0')
+box_height, box_width is  351 497
+y0, y1, x0, x1 is  2291 2642 340 837
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2291 2642 340 837
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2291 2642 340 837
+bboxes size is  136 487 271 768
+patch_y1-patch_y0, patch_x1-patch_x0 is  351 497
+bboxes height and width is  351 497
+-----rotation the patch_real-----
+Running epoch 0:  31%|###       | 30/97 [00:36<01:23,  1.25s/it]
+--------------datadirs: IMG_4841.txt---------------
+ratio 0.3768679220760515
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1962.5537], device='cuda:0') tensor([1507.9370], device='cuda:0') tensor([2231.4463], device='cuda:0') tensor([1698.0630], device='cuda:0')
+height, width is  [95.06299] [134.44629]
+bboxes is  [[385 216 654 407]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([3.8677], device='cuda:0') tensor([3.2820], device='cuda:0')
+box_height, box_width is  191 269
+y0, y1, x0, x1 is  1507 1698 1962 2231
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1507 1698 1962 2231
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1507 1698 1962 2231
+bboxes size is  216 407 385 654
+patch_y1-patch_y0, patch_x1-patch_x0 is  191 269
+bboxes height and width is  191 269
+-----rotation the patch_real-----
+Running epoch 0:  32%|###1      | 31/97 [00:37<01:19,  1.20s/it]
+--------------datadirs: IMG_4789.txt---------------
+ratio 0.5947460652728004
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1270.7400], device='cuda:0') tensor([1573.5737], device='cuda:0') tensor([2273.2600], device='cuda:0') tensor([2282.4263], device='cuda:0')
+height, width is  [354.42627] [501.26]
+bboxes is  [[  18  -42 1021  666]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.0374], device='cuda:0') tensor([0.8803], device='cuda:0')
+box_height, box_width is  708 1003
+y0, y1, x0, x1 is  1573 2281 1270 2273
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1573 2281 1270 2273
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1573 2281 1270 2273
+bboxes size is  -42 666 18 1021
+patch_y1-patch_y0, patch_x1-patch_x0 is  708 1003
+bboxes height and width is  708 1003
+datadirs is  ('IMG_4789.txt',)
+Running epoch 0:  33%|###2      | 32/97 [00:38<00:59,  1.09it/s]
+--------------datadirs: IMG_4905.txt---------------
+ratio 0.7251333135236967
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([284.9372], device='cuda:0') tensor([1488.6122], device='cuda:0') tensor([1655.0627], device='cuda:0') tensor([2457.3879], device='cuda:0')
+height, width is  [484.38788] [685.06274]
+bboxes is  [[-165 -172 1205  796]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.7591], device='cuda:0') tensor([0.6441], device='cuda:0')
+box_height, box_width is  968 1370
+y0, y1, x0, x1 is  1488 2456 284 1654
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1488 2456 284 1654
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  165 165 172 172
+applier.size() is  torch.Size([1, 3, 968, 1370])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1488 2456 284 1654
+y0, y1, x0, x1 is  1488 2456 284 1654
+-----rotation the patch_real-----
+Running epoch 0:  34%|###4      | 33/97 [00:39<01:09,  1.09s/it]
+--------------datadirs: IMG_4766.txt---------------
+ratio 0.5258658298236741
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1294.2338], device='cuda:0') tensor([2609.4783], device='cuda:0') tensor([1855.7662], device='cuda:0') tensor([3006.5217], device='cuda:0')
+height, width is  [198.52173] [280.76624]
+bboxes is  [[239 113 800 510]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.8521], device='cuda:0') tensor([1.5716], device='cuda:0')
+box_height, box_width is  397 561
+y0, y1, x0, x1 is  2609 3006 1294 1855
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2609 3006 1294 1855
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2609 3006 1294 1855
+bboxes size is  113 510 239 800
+patch_y1-patch_y0, patch_x1-patch_x0 is  397 561
+bboxes height and width is  397 561
+-----rotation the patch_real-----
+Running epoch 0:  35%|###5      | 34/97 [00:40<01:13,  1.16s/it]
+--------------datadirs: IMG_4817.txt---------------
+ratio 0.9937663216102673
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([760.1025], device='cuda:0') tensor([654.9008], device='cuda:0') tensor([2335.8975], device='cuda:0') tensor([1769.0992], device='cuda:0')
+height, width is  [557.09924] [787.89746]
+bboxes is  [[-267 -245 1307  869]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.6600], device='cuda:0') tensor([0.5600], device='cuda:0')
+box_height, box_width is  1114 1574
+y0, y1, x0, x1 is  654 1768 760 2334
+-----boundary value discussion-----
+y0, y1, x0, x1 is  654 1768 760 2334
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  267 268 245 245
+applier.size() is  torch.Size([1, 3, 1114, 1575])
+patch_y0, patch_y1, patch_x0, patch_x1 is  654 1768 760 2334
+y0, y1, x0, x1 is  654 1768 760 2334
+-----rotation the patch_real-----
+Running epoch 0:  36%|###6      | 35/97 [00:41<01:11,  1.15s/it]
+--------------datadirs: IMG_4769.txt---------------
+ratio 0.7726479441906215
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([2325.8687], device='cuda:0') tensor([1164.2404], device='cuda:0') tensor([2854.1313], device='cuda:0') tensor([1537.7596], device='cuda:0')
+height, width is  [186.75964] [264.13135]
+bboxes is  [[255 125 784 498]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.9687], device='cuda:0') tensor([1.6706], device='cuda:0')
+box_height, box_width is  373 529
+y0, y1, x0, x1 is  1164 1537 2325 2854
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1164 1537 2325 2854
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1164 1537 2325 2854
+bboxes size is  125 498 255 784
+patch_y1-patch_y0, patch_x1-patch_x0 is  373 529
+bboxes height and width is  373 529
+-----rotation the patch_real-----
+Running epoch 0:  37%|###7      | 36/97 [00:42<01:05,  1.08s/it]
+--------------datadirs: IMG_4791.txt---------------
+ratio 0.5253363809607587
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([525.9323], device='cuda:0') tensor([1694.3359], device='cuda:0') tensor([1068.0677], device='cuda:0') tensor([2077.6641], device='cuda:0')
+height, width is  [191.66406] [271.06775]
+bboxes is  [[248 120 791 503]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.9183], device='cuda:0') tensor([1.6278], device='cuda:0')
+box_height, box_width is  383 543
+y0, y1, x0, x1 is  1694 2077 525 1068
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1694 2077 525 1068
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1694 2077 525 1068
+bboxes size is  120 503 248 791
+patch_y1-patch_y0, patch_x1-patch_x0 is  383 543
+bboxes height and width is  383 543
+-----rotation the patch_real-----
+Running epoch 0:  38%|###8      | 37/97 [00:44<01:10,  1.17s/it]
+--------------datadirs: IMG_4786.txt---------------
+ratio 0.5914095382714155
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([744.2711], device='cuda:0') tensor([1799.4341], device='cuda:0') tensor([1523.7289], device='cuda:0') tensor([2350.5659], device='cuda:0')
+height, width is  [275.56592] [389.72888]
+bboxes is  [[130  36 909 587]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.3343], device='cuda:0') tensor([1.1322], device='cuda:0')
+box_height, box_width is  551 779
+y0, y1, x0, x1 is  1799 2350 744 1523
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1799 2350 744 1523
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1799 2350 744 1523
+bboxes size is  36 587 130 909
+patch_y1-patch_y0, patch_x1-patch_x0 is  551 779
+bboxes height and width is  551 779
+-----rotation the patch_real-----
+Running epoch 0:  39%|###9      | 38/97 [00:45<01:09,  1.18s/it]
+--------------datadirs: IMG_4910.txt---------------
+ratio 0.2641516744910364
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1676.2314], device='cuda:0') tensor([3009.4465], device='cuda:0') tensor([2189.7686], device='cuda:0') tensor([3372.5535], device='cuda:0')
+height, width is  [181.55347] [256.76855]
+bboxes is  [[263 130 776 493]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.0252], device='cuda:0') tensor([1.7185], device='cuda:0')
+box_height, box_width is  363 513
+y0, y1, x0, x1 is  3009 3372 1676 2189
+-----boundary value discussion-----
+y0, y1, x0, x1 is  3009 3372 1676 2189
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  3009 3372 1676 2189
+bboxes size is  130 493 263 776
+patch_y1-patch_y0, patch_x1-patch_x0 is  363 513
+bboxes height and width is  363 513
+-----rotation the patch_real-----
+Running epoch 0:  40%|####      | 39/97 [00:46<01:12,  1.25s/it]
+--------------datadirs: IMG_4870.txt---------------
+ratio 0.6141656763710103
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([981.1478], device='cuda:0') tensor([1630.4277], device='cuda:0') tensor([1624.8522], device='cuda:0') tensor([2085.5723], device='cuda:0')
+height, width is  [227.57227] [321.8522]
+bboxes is  [[198  84 841 539]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.6156], device='cuda:0') tensor([1.3710], device='cuda:0')
+box_height, box_width is  455 643
+y0, y1, x0, x1 is  1630 2085 981 1624
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1630 2085 981 1624
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1630 2085 981 1624
+bboxes size is  84 539 198 841
+patch_y1-patch_y0, patch_x1-patch_x0 is  455 643
+bboxes height and width is  455 643
+-----rotation the patch_real-----
+Running epoch 0:  41%|####1     | 40/97 [00:48<01:10,  1.23s/it]
+--------------datadirs: IMG_4805.txt---------------
+ratio 0.6990899780964386
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1108.8251], device='cuda:0') tensor([2964.6643], device='cuda:0') tensor([1565.1749], device='cuda:0') tensor([3287.3357], device='cuda:0')
+height, width is  [161.3357] [228.17493]
+bboxes is  [[291 150 748 473]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.2790], device='cuda:0') tensor([1.9339], device='cuda:0')
+box_height, box_width is  323 457
+y0, y1, x0, x1 is  2964 3287 1108 1565
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2964 3287 1108 1565
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2964 3287 1108 1565
+bboxes size is  150 473 291 748
+patch_y1-patch_y0, patch_x1-patch_x0 is  323 457
+bboxes height and width is  323 457
+-----rotation the patch_real-----
+Running epoch 0:  42%|####2     | 41/97 [00:49<01:08,  1.23s/it]
+--------------datadirs: IMG_4886.txt---------------
+ratio 0.6265538243170111
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([596.6415], device='cuda:0') tensor([1838.2516], device='cuda:0') tensor([1133.3584], device='cuda:0') tensor([2217.7483], device='cuda:0')
+height, width is  [189.74835] [268.35843]
+bboxes is  [[251 122 788 501]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.9377], device='cuda:0') tensor([1.6443], device='cuda:0')
+box_height, box_width is  379 537
+y0, y1, x0, x1 is  1838 2217 596 1133
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1838 2217 596 1133
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1838 2217 596 1133
+bboxes size is  122 501 251 788
+patch_y1-patch_y0, patch_x1-patch_x0 is  379 537
+bboxes height and width is  379 537
+-----rotation the patch_real-----
+Running epoch 0:  43%|####3     | 42/97 [00:50<01:05,  1.19s/it]
+--------------datadirs: IMG_4797.txt---------------
+ratio 0.5679570408220985
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1795.7197], device='cuda:0') tensor([1830.8322], device='cuda:0') tensor([2438.2803], device='cuda:0') tensor([2285.1677], device='cuda:0')
+height, width is  [227.16779] [321.28027]
+bboxes is  [[198  84 841 539]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.6185], device='cuda:0') tensor([1.3734], device='cuda:0')
+box_height, box_width is  455 643
+y0, y1, x0, x1 is  1830 2285 1795 2438
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1830 2285 1795 2438
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1830 2285 1795 2438
+bboxes size is  84 539 198 841
+patch_y1-patch_y0, patch_x1-patch_x0 is  455 643
+bboxes height and width is  455 643
+-----rotation the patch_real-----
+Running epoch 0:  44%|####4     | 43/97 [00:51<01:10,  1.30s/it]
+--------------datadirs: IMG_4803.txt---------------
+ratio 0.6971281057436007
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1150.3829], device='cuda:0') tensor([2715.5334], device='cuda:0') tensor([1499.6171], device='cuda:0') tensor([2962.4666], device='cuda:0')
+height, width is  [123.46655] [174.61707]
+bboxes is  [[345 188 694 435]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.9779], device='cuda:0') tensor([2.5270], device='cuda:0')
+box_height, box_width is  247 349
+y0, y1, x0, x1 is  2715 2962 1150 1499
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2715 2962 1150 1499
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2715 2962 1150 1499
+bboxes size is  188 435 345 694
+patch_y1-patch_y0, patch_x1-patch_x0 is  247 349
+bboxes height and width is  247 349
+-----rotation the patch_real-----
+Running epoch 0:  45%|####5     | 44/97 [00:53<01:09,  1.31s/it]
+--------------datadirs: IMG_4885.txt---------------
+ratio 0.6534991116514719
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1072.8228], device='cuda:0') tensor([1866.6929], device='cuda:0') tensor([1577.1772], device='cuda:0') tensor([2223.3071], device='cuda:0')
+height, width is  [178.30713] [252.17725]
+bboxes is  [[267 133 772 490]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.0620], device='cuda:0') tensor([1.7498], device='cuda:0')
+box_height, box_width is  357 505
+y0, y1, x0, x1 is  1866 2223 1072 1577
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1866 2223 1072 1577
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1866 2223 1072 1577
+bboxes size is  133 490 267 772
+patch_y1-patch_y0, patch_x1-patch_x0 is  357 505
+bboxes height and width is  357 505
+-----rotation the patch_real-----
+Running epoch 0:  46%|####6     | 45/97 [00:54<01:07,  1.30s/it]
+--------------datadirs: IMG_4799.txt---------------
+ratio 0.6066704006878751
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1943.7793], device='cuda:0') tensor([1877.6318], device='cuda:0') tensor([2598.2207], device='cuda:0') tensor([2340.3682], device='cuda:0')
+height, width is  [231.36816] [327.2207]
+bboxes is  [[192  80 847 543]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.5891], device='cuda:0') tensor([1.3485], device='cuda:0')
+box_height, box_width is  463 655
+y0, y1, x0, x1 is  1877 2340 1943 2598
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1877 2340 1943 2598
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1877 2340 1943 2598
+bboxes size is  80 543 192 847
+patch_y1-patch_y0, patch_x1-patch_x0 is  463 655
+bboxes height and width is  463 655
+-----rotation the patch_real-----
+Running epoch 0:  47%|####7     | 46/97 [00:55<01:06,  1.30s/it]
+--------------datadirs: IMG_4754.txt---------------
+ratio 0.7066055770041506
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1795.6217], device='cuda:0') tensor([1723.7628], device='cuda:0') tensor([2438.3784], device='cuda:0') tensor([2178.2373], device='cuda:0')
+height, width is  [227.23724] [321.37836]
+bboxes is  [[198  84 841 539]]
+-----paste the resized patch on the car-----
+size[3] > size[2]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.6180], device='cuda:0') tensor([1.3730], device='cuda:0')
+box_height, box_width is  455 643
+y0, y1, x0, x1 is  1723 2178 1795 2438
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1723 2178 1795 2438
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1723 2178 1795 2438
+bboxes size is  84 539 198 841
+patch_y1-patch_y0, patch_x1-patch_x0 is  455 643
+bboxes height and width is  455 643
+-----rotation the patch_real-----
+Running epoch 0:  48%|####8     | 47/97 [00:57<01:04,  1.28s/it]
+--------------datadirs: IMG_4837.txt---------------
+ratio 0.9232788662825514
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([646.6917], device='cuda:0') tensor([735.8729], device='cuda:0') tensor([3167.3083], device='cuda:0') tensor([2518.1272], device='cuda:0')
+height, width is  [891.12714] [1260.3083]
+bboxes is  [[-740 -579 1780 1203]]
+-----paste the resized patch on the car-----
+size[3] > size[2]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.4126], device='cuda:0') tensor([0.3501], device='cuda:0')
+box_height, box_width is  1782 2520
+y0, y1, x0, x1 is  735 2517 646 3166
+-----boundary value discussion-----
+y0, y1, x0, x1 is  735 2517 646 3166
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  740 740 579 579
+applier.size() is  torch.Size([1, 3, 1782, 2520])
+patch_y0, patch_y1, patch_x0, patch_x1 is  735 2517 646 3166
+y0, y1, x0, x1 is  735 2517 646 3166
+-----rotation the patch_real-----
+Running epoch 0:  49%|####9     | 48/97 [00:58<01:03,  1.30s/it]
+--------------datadirs: IMG_4846.txt---------------
+ratio 0.4660956417556527
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1832.9120], device='cuda:0') tensor([1307.5540], device='cuda:0') tensor([2479.0881], device='cuda:0') tensor([1764.4460], device='cuda:0')
+height, width is  [228.44604] [323.08807]
+bboxes is  [[196  83 843 540]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.6095], device='cuda:0') tensor([1.3657], device='cuda:0')
+box_height, box_width is  457 647
+y0, y1, x0, x1 is  1307 1764 1832 2479
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1307 1764 1832 2479
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1307 1764 1832 2479
+bboxes size is  83 540 196 843
+patch_y1-patch_y0, patch_x1-patch_x0 is  457 647
+bboxes height and width is  457 647
+-----rotation the patch_real-----
+Running epoch 0:  51%|#####     | 49/97 [00:59<01:02,  1.30s/it]
+--------------datadirs: IMG_4849.txt---------------
+ratio 0.3925181836678389
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([874.4263], device='cuda:0') tensor([2352.6550], device='cuda:0') tensor([1367.5737], device='cuda:0') tensor([2701.3450], device='cuda:0')
+height, width is  [174.34497] [246.5737]
+bboxes is  [[273 137 766 486]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.1089], device='cuda:0') tensor([1.7896], device='cuda:0')
+box_height, box_width is  349 493
+y0, y1, x0, x1 is  2352 2701 874 1367
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2352 2701 874 1367
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2352 2701 874 1367
+bboxes size is  137 486 273 766
+patch_y1-patch_y0, patch_x1-patch_x0 is  349 493
+bboxes height and width is  349 493
+-----rotation the patch_real-----
+Running epoch 0:  52%|#####1    | 50/97 [01:00<00:59,  1.26s/it]
+--------------datadirs: IMG_4779.txt---------------
+ratio 0.8060475682856356
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([323.0758], device='cuda:0') tensor([1023.8819], device='cuda:0') tensor([1502.9242], device='cuda:0') tensor([1858.1182], device='cuda:0')
+height, width is  [417.11813] [589.9242]
+bboxes is  [[ -69 -105 1109  729]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.8815], device='cuda:0') tensor([0.7480], device='cuda:0')
+box_height, box_width is  834 1178
+y0, y1, x0, x1 is  1023 1857 323 1501
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1023 1857 323 1501
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  69 70 105 105
+applier.size() is  torch.Size([1, 3, 834, 1179])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1023 1857 323 1501
+y0, y1, x0, x1 is  1023 1857 323 1501
+-----rotation the patch_real-----
+Running epoch 0:  53%|#####2    | 51/97 [01:02<01:00,  1.32s/it]
+--------------datadirs: IMG_4864.txt---------------
+ratio 0.511299229996871
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1158.7314], device='cuda:0') tensor([2348.8203], device='cuda:0') tensor([1835.2686], device='cuda:0') tensor([2827.1797], device='cuda:0')
+height, width is  [239.17969] [338.26855]
+bboxes is  [[181  72 858 551]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.5372], device='cuda:0') tensor([1.3045], device='cuda:0')
+box_height, box_width is  479 677
+y0, y1, x0, x1 is  2348 2827 1158 1835
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2348 2827 1158 1835
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2348 2827 1158 1835
+bboxes size is  72 551 181 858
+patch_y1-patch_y0, patch_x1-patch_x0 is  479 677
+bboxes height and width is  479 677
+-----rotation the patch_real-----
+Running epoch 0:  54%|#####3    | 52/97 [01:03<01:01,  1.36s/it]
+--------------datadirs: IMG_4758.txt---------------
+ratio 0.45858854452738557
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1050.4341], device='cuda:0') tensor([2731.7917], device='cuda:0') tensor([1421.5659], device='cuda:0') tensor([2994.2083], device='cuda:0')
+height, width is  [131.20825] [185.56592]
+bboxes is  [[334 180 705 443]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.8022], device='cuda:0') tensor([2.3779], device='cuda:0')
+box_height, box_width is  263 371
+y0, y1, x0, x1 is  2731 2994 1050 1421
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2731 2994 1050 1421
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2731 2994 1050 1421
+bboxes size is  180 443 334 705
+patch_y1-patch_y0, patch_x1-patch_x0 is  263 371
+bboxes height and width is  263 371
+-----rotation the patch_real-----
+Running epoch 0:  55%|#####4    | 53/97 [01:05<01:00,  1.37s/it]
+--------------datadirs: IMG_4853.txt---------------
+ratio 0.423619586406368
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([679.5581], device='cuda:0') tensor([1807.5663], device='cuda:0') tensor([1280.4419], device='cuda:0') tensor([2232.4336], device='cuda:0')
+height, width is  [212.43365] [300.4419]
+bboxes is  [[219  99 820 524]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.7308], device='cuda:0') tensor([1.4687], device='cuda:0')
+box_height, box_width is  425 601
+y0, y1, x0, x1 is  1807 2232 679 1280
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1807 2232 679 1280
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1807 2232 679 1280
+bboxes size is  99 524 219 820
+patch_y1-patch_y0, patch_x1-patch_x0 is  425 601
+bboxes height and width is  425 601
+-----rotation the patch_real-----
+Running epoch 0:  56%|#####5    | 54/97 [01:06<00:59,  1.38s/it]
+--------------datadirs: IMG_4874.txt---------------
+ratio 0.7344571401568312
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1415.6448], device='cuda:0') tensor([1938.5367], device='cuda:0') tensor([2268.3552], device='cuda:0') tensor([2541.4634], device='cuda:0')
+height, width is  [301.46332] [426.35522]
+bboxes is  [[ 93  10 946 613]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.2196], device='cuda:0') tensor([1.0350], device='cuda:0')
+box_height, box_width is  603 853
+y0, y1, x0, x1 is  1938 2541 1415 2268
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1938 2541 1415 2268
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1938 2541 1415 2268
+bboxes size is  10 613 93 946
+patch_y1-patch_y0, patch_x1-patch_x0 is  603 853
+bboxes height and width is  603 853
+-----rotation the patch_real-----
+Running epoch 0:  57%|#####6    | 55/97 [01:07<00:55,  1.32s/it]
+--------------datadirs: IMG_4891.txt---------------
+ratio 0.5760840367854102
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1106.2908], device='cuda:0') tensor([2299.9026], device='cuda:0') tensor([1813.7092], device='cuda:0') tensor([2800.0974], device='cuda:0')
+height, width is  [250.09741] [353.70923]
+bboxes is  [[166  61 873 562]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.4701], device='cuda:0') tensor([1.2475], device='cuda:0')
+box_height, box_width is  501 707
+y0, y1, x0, x1 is  2299 2800 1106 1813
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2299 2800 1106 1813
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2299 2800 1106 1813
+bboxes size is  61 562 166 873
+patch_y1-patch_y0, patch_x1-patch_x0 is  501 707
+bboxes height and width is  501 707
+-----rotation the patch_real-----
+Running epoch 0:  58%|#####7    | 56/97 [01:09<00:54,  1.34s/it]
+--------------datadirs: IMG_4836.txt---------------
+ratio 0.8627638579896917
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([928.7690], device='cuda:0') tensor([1150.2913], device='cuda:0') tensor([3035.2310], device='cuda:0') tensor([2639.7087], device='cuda:0')
+height, width is  [744.70874] [1053.231]
+bboxes is  [[-533 -432 1573 1056]]
+-----paste the resized patch on the car-----
+size[3] > size[2]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.4937], device='cuda:0') tensor([0.4190], device='cuda:0')
+box_height, box_width is  1488 2106
+y0, y1, x0, x1 is  1150 2638 928 3034
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1150 2638 928 3034
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  533 533 432 433
+applier.size() is  torch.Size([1, 3, 1489, 2106])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1150 2638 928 3034
+y0, y1, x0, x1 is  1150 2638 928 3034
+-----rotation the patch_real-----
+Running epoch 0:  59%|#####8    | 57/97 [01:10<00:51,  1.28s/it]
+--------------datadirs: IMG_4873.txt---------------
+ratio 0.6525372491199458
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([942.8608], device='cuda:0') tensor([2124.0732], device='cuda:0') tensor([1545.1392], device='cuda:0') tensor([2549.9268], device='cuda:0')
+height, width is  [212.92676] [301.13916]
+bboxes is  [[218  99 821 524]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.7268], device='cuda:0') tensor([1.4653], device='cuda:0')
+box_height, box_width is  425 603
+y0, y1, x0, x1 is  2124 2549 942 1545
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2124 2549 942 1545
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2124 2549 942 1545
+bboxes size is  99 524 218 821
+patch_y1-patch_y0, patch_x1-patch_x0 is  425 603
+bboxes height and width is  425 603
+-----rotation the patch_real-----
+Running epoch 0:  60%|#####9    | 58/97 [01:11<00:49,  1.26s/it]
+--------------datadirs: IMG_4795.txt---------------
+ratio 0.5472977193515908
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1997.9319], device='cuda:0') tensor([2754.8811], device='cuda:0') tensor([2612.0681], device='cuda:0') tensor([3189.1189], device='cuda:0')
+height, width is  [217.1189] [307.0681]
+bboxes is  [[212  94 827 529]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.6934], device='cuda:0') tensor([1.4370], device='cuda:0')
+box_height, box_width is  435 615
+y0, y1, x0, x1 is  2754 3189 1997 2612
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2754 3189 1997 2612
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2754 3189 1997 2612
+bboxes size is  94 529 212 827
+patch_y1-patch_y0, patch_x1-patch_x0 is  435 615
+bboxes height and width is  435 615
+-----rotation the patch_real-----
+Running epoch 0:  61%|######    | 59/97 [01:12<00:50,  1.32s/it]
+--------------datadirs: IMG_4876.txt---------------
+ratio 0.7986421844134102
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([909.2558], device='cuda:0') tensor([1513.5647], device='cuda:0') tensor([1846.7443], device='cuda:0') tensor([2176.4353], device='cuda:0')
+height, width is  [331.4353] [468.74423]
+bboxes is  [[ 51 -19 988 643]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.1093], device='cuda:0') tensor([0.9414], device='cuda:0')
+box_height, box_width is  662 937
+y0, y1, x0, x1 is  1513 2175 909 1846
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1513 2175 909 1846
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1513 2175 909 1846
+bboxes size is  -19 643 51 988
+patch_y1-patch_y0, patch_x1-patch_x0 is  662 937
+bboxes height and width is  662 937
+datadirs is  ('IMG_4876.txt',)
+Running epoch 0:  62%|######1   | 60/97 [01:13<00:37,  1.01s/it]
+--------------datadirs: IMG_4889.txt---------------
+ratio 0.5708200332107684
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([711.1677], device='cuda:0') tensor([2529.5933], device='cuda:0') tensor([1198.8324], device='cuda:0') tensor([2874.4067], device='cuda:0')
+height, width is  [172.40674] [243.83237]
+bboxes is  [[276 139 763 484]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.1326], device='cuda:0') tensor([1.8097], device='cuda:0')
+box_height, box_width is  345 487
+y0, y1, x0, x1 is  2529 2874 711 1198
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2529 2874 711 1198
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2529 2874 711 1198
+bboxes size is  139 484 276 763
+patch_y1-patch_y0, patch_x1-patch_x0 is  345 487
+bboxes height and width is  345 487
+-----rotation the patch_real-----
+Running epoch 0:  63%|######2   | 61/97 [01:14<00:40,  1.12s/it]
+--------------datadirs: IMG_4806.txt---------------
+ratio 0.5586145021597427
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1088.4747], device='cuda:0') tensor([1873.0023], device='cuda:0') tensor([1747.5253], device='cuda:0') tensor([2338.9976], device='cuda:0')
+height, width is  [232.99762] [329.52527]
+bboxes is  [[190  79 849 544]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.5780], device='cuda:0') tensor([1.3391], device='cuda:0')
+box_height, box_width is  465 659
+y0, y1, x0, x1 is  1873 2338 1088 1747
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1873 2338 1088 1747
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1873 2338 1088 1747
+bboxes size is  79 544 190 849
+patch_y1-patch_y0, patch_x1-patch_x0 is  465 659
+bboxes height and width is  465 659
+-----rotation the patch_real-----
+Running epoch 0:  64%|######3   | 62/97 [01:16<00:42,  1.21s/it]
+--------------datadirs: IMG_4813.txt---------------
+ratio 0.8403513185424548
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([411.6957], device='cuda:0') tensor([708.6535], device='cuda:0') tensor([1920.3043], device='cuda:0') tensor([1775.3464], device='cuda:0')
+height, width is  [533.34644] [754.3043]
+bboxes is  [[-234 -221 1274  845]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.6894], device='cuda:0') tensor([0.5850], device='cuda:0')
+box_height, box_width is  1066 1508
+y0, y1, x0, x1 is  708 1774 411 1919
+-----boundary value discussion-----
+y0, y1, x0, x1 is  708 1774 411 1919
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  234 234 221 221
+applier.size() is  torch.Size([1, 3, 1066, 1508])
+patch_y0, patch_y1, patch_x0, patch_x1 is  708 1774 411 1919
+y0, y1, x0, x1 is  708 1774 411 1919
+-----rotation the patch_real-----
+Running epoch 0:  65%|######4   | 63/97 [01:17<00:41,  1.22s/it]
+--------------datadirs: IMG_4808.txt---------------
+ratio 0.9875546715058754
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([992.2001], device='cuda:0') tensor([2543.4646], device='cuda:0') tensor([2031.7999], device='cuda:0') tensor([3278.5354], device='cuda:0')
+height, width is  [367.5354] [519.7999]
+bboxes is  [[   0  -55 1039  679]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.0004], device='cuda:0') tensor([0.8489], device='cuda:0')
+box_height, box_width is  734 1039
+y0, y1, x0, x1 is  2543 3277 992 2031
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2543 3277 992 2031
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2543 3277 992 2031
+bboxes size is  -55 679 0 1039
+patch_y1-patch_y0, patch_x1-patch_x0 is  734 1039
+bboxes height and width is  734 1039
+datadirs is  ('IMG_4808.txt',)
+Running epoch 0:  66%|######5   | 64/97 [01:17<00:32,  1.02it/s]
+--------------datadirs: IMG_4904.txt---------------
+ratio 0.5727765301900657
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([2125.1750], device='cuda:0') tensor([1197.1541], device='cuda:0') tensor([2766.8250], device='cuda:0') tensor([1650.8459], device='cuda:0')
+height, width is  [226.84595] [320.82495]
+bboxes is  [[199  85 840 538]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.6208], device='cuda:0') tensor([1.3754], device='cuda:0')
+box_height, box_width is  453 641
+y0, y1, x0, x1 is  1197 1650 2125 2766
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1197 1650 2125 2766
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1197 1650 2125 2766
+bboxes size is  85 538 199 840
+patch_y1-patch_y0, patch_x1-patch_x0 is  453 641
+bboxes height and width is  453 641
+-----rotation the patch_real-----
+Running epoch 0:  67%|######7   | 65/97 [01:19<00:34,  1.09s/it]
+--------------datadirs: IMG_4863.txt---------------
+ratio 0.2995870883547059
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1615.8838], device='cuda:0') tensor([1867.8774], device='cuda:0') tensor([1882.1162], device='cuda:0') tensor([2056.1226], device='cuda:0')
+height, width is  [94.12256] [133.11621]
+bboxes is  [[386 217 653 406]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([3.9064], device='cuda:0') tensor([3.3148], device='cuda:0')
+box_height, box_width is  189 267
+y0, y1, x0, x1 is  1867 2056 1615 1882
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1867 2056 1615 1882
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1867 2056 1615 1882
+bboxes size is  217 406 386 653
+patch_y1-patch_y0, patch_x1-patch_x0 is  189 267
+bboxes height and width is  189 267
+-----rotation the patch_real-----
+Running epoch 0:  68%|######8   | 66/97 [01:20<00:35,  1.14s/it]
+--------------datadirs: IMG_4782.txt---------------
+ratio 0.7355121566792586
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([310.2096], device='cuda:0') tensor([1912.3502], device='cuda:0') tensor([1355.7904], device='cuda:0') tensor([2651.6497], device='cuda:0')
+height, width is  [369.64972] [522.7904]
+bboxes is  [[  -2  -57 1042  681]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.9947], device='cuda:0') tensor([0.8440], device='cuda:0')
+box_height, box_width is  738 1044
+y0, y1, x0, x1 is  1912 2650 310 1354
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1912 2650 310 1354
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  2 3 57 58
+applier.size() is  torch.Size([1, 3, 739, 1045])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1912 2650 310 1354
+y0, y1, x0, x1 is  1912 2650 310 1354
+-----rotation the patch_real-----
+Running epoch 0:  69%|######9   | 67/97 [01:21<00:37,  1.24s/it]
+--------------datadirs: IMG_4787.txt---------------
+ratio 0.7266049481870995
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([719.4345], device='cuda:0') tensor([720.2466], device='cuda:0') tensor([2008.5654], device='cuda:0') tensor([1631.7534], device='cuda:0')
+height, width is  [455.7534] [644.5654]
+bboxes is  [[-124 -143 1164  767]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.8067], device='cuda:0') tensor([0.6846], device='cuda:0')
+box_height, box_width is  910 1288
+y0, y1, x0, x1 is  720 1630 719 2007
+-----boundary value discussion-----
+y0, y1, x0, x1 is  720 1630 719 2007
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  124 125 143 144
+applier.size() is  torch.Size([1, 3, 911, 1289])
+patch_y0, patch_y1, patch_x0, patch_x1 is  720 1630 719 2007
+y0, y1, x0, x1 is  720 1630 719 2007
+-----rotation the patch_real-----
+Running epoch 0:  70%|#######   | 68/97 [01:23<00:37,  1.29s/it]
+--------------datadirs: IMG_4868.txt---------------
+ratio 0.6235272872987815
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1231.2874], device='cuda:0') tensor([1691.9810], device='cuda:0') tensor([1802.7126], device='cuda:0') tensor([2096.0190], device='cuda:0')
+height, width is  [202.01904] [285.71265]
+bboxes is  [[234 109 805 514]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.8200], device='cuda:0') tensor([1.5444], device='cuda:0')
+box_height, box_width is  405 571
+y0, y1, x0, x1 is  1691 2096 1231 1802
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1691 2096 1231 1802
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1691 2096 1231 1802
+bboxes size is  109 514 234 805
+patch_y1-patch_y0, patch_x1-patch_x0 is  405 571
+bboxes height and width is  405 571
+-----rotation the patch_real-----
+Running epoch 0:  71%|#######1  | 69/97 [01:24<00:36,  1.30s/it]
+--------------datadirs: IMG_4785.txt---------------
+ratio 0.659572749732634
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([759.4407], device='cuda:0') tensor([1111.6348], device='cuda:0') tensor([1600.5593], device='cuda:0') tensor([1706.3652], device='cuda:0')
+height, width is  [297.36523] [420.55933]
+bboxes is  [[ 99  14 940 609]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.2364], device='cuda:0') tensor([1.0492], device='cuda:0')
+box_height, box_width is  595 841
+y0, y1, x0, x1 is  1111 1706 759 1600
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1111 1706 759 1600
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1111 1706 759 1600
+bboxes size is  14 609 99 940
+patch_y1-patch_y0, patch_x1-patch_x0 is  595 841
+bboxes height and width is  595 841
+-----rotation the patch_real-----
+Running epoch 0:  72%|#######2  | 70/97 [01:25<00:34,  1.28s/it]
+--------------datadirs: IMG_4877.txt---------------
+ratio 0.7658242483801574
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([785.5013], device='cuda:0') tensor([2018.6069], device='cuda:0') tensor([1646.4987], device='cuda:0') tensor([2627.3931], device='cuda:0')
+height, width is  [304.39307] [430.49866]
+bboxes is  [[ 89   7 950 616]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.2079], device='cuda:0') tensor([1.0250], device='cuda:0')
+box_height, box_width is  609 861
+y0, y1, x0, x1 is  2018 2627 785 1646
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2018 2627 785 1646
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2018 2627 785 1646
+bboxes size is  7 616 89 950
+patch_y1-patch_y0, patch_x1-patch_x0 is  609 861
+bboxes height and width is  609 861
+-----rotation the patch_real-----
+Running epoch 0:  73%|#######3  | 71/97 [01:26<00:32,  1.27s/it]
+--------------datadirs: IMG_4835.txt---------------
+ratio 0.6681841584037461
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1690.3030], device='cuda:0') tensor([749.8304], device='cuda:0') tensor([3127.6970], device='cuda:0') tensor([1766.1697], device='cuda:0')
+height, width is  [508.16965] [718.697]
+bboxes is  [[-198 -196 1238  820]]
+-----paste the resized patch on the car-----
+size[3] > size[2]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.7235], device='cuda:0') tensor([0.6140], device='cuda:0')
+box_height, box_width is  1016 1436
+y0, y1, x0, x1 is  749 1765 1690 3126
+-----boundary value discussion-----
+y0, y1, x0, x1 is  749 1765 1690 3126
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  198 199 196 196
+applier.size() is  torch.Size([1, 3, 1016, 1437])
+patch_y0, patch_y1, patch_x0, patch_x1 is  749 1765 1690 3126
+y0, y1, x0, x1 is  749 1765 1690 3126
+-----rotation the patch_real-----
+Running epoch 0:  74%|#######4  | 72/97 [01:28<00:31,  1.27s/it]
+--------------datadirs: IMG_4867.txt---------------
+ratio 0.4862715942073975
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([972.5032], device='cuda:0') tensor([1493.8710], device='cuda:0') tensor([1589.4968], device='cuda:0') tensor([1930.1290], device='cuda:0')
+height, width is  [218.12903] [308.49683]
+bboxes is  [[211  93 828 530]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.6856], device='cuda:0') tensor([1.4303], device='cuda:0')
+box_height, box_width is  437 617
+y0, y1, x0, x1 is  1493 1930 972 1589
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1493 1930 972 1589
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1493 1930 972 1589
+bboxes size is  93 530 211 828
+patch_y1-patch_y0, patch_x1-patch_x0 is  437 617
+bboxes height and width is  437 617
+-----rotation the patch_real-----
+Running epoch 0:  75%|#######5  | 73/97 [01:29<00:31,  1.32s/it]
+--------------datadirs: IMG_4906.txt---------------
+ratio 0.9351344728574873
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([483.7442], device='cuda:0') tensor([1147.8090], device='cuda:0') tensor([2778.2559], device='cuda:0') tensor([2770.1909], device='cuda:0')
+height, width is  [811.191] [1147.2559]
+bboxes is  [[-627 -499 1667 1123]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.4533], device='cuda:0') tensor([0.3846], device='cuda:0')
+box_height, box_width is  1622 2294
+y0, y1, x0, x1 is  1147 2769 483 2777
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1147 2769 483 2777
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  627 627 499 499
+applier.size() is  torch.Size([1, 3, 1622, 2294])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1147 2769 483 2777
+y0, y1, x0, x1 is  1147 2769 483 2777
+-----rotation the patch_real-----
+Running epoch 0:  76%|#######6  | 74/97 [01:30<00:29,  1.28s/it]
+--------------datadirs: IMG_4792.txt---------------
+ratio 0.5939240469014997
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1805.3717], device='cuda:0') tensor([1095.9194], device='cuda:0') tensor([2382.6282], device='cuda:0') tensor([1504.0806], device='cuda:0')
+height, width is  [204.08057] [288.62823]
+bboxes is  [[231 107 808 516]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.8016], device='cuda:0') tensor([1.5288], device='cuda:0')
+box_height, box_width is  409 577
+y0, y1, x0, x1 is  1095 1504 1805 2382
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1095 1504 1805 2382
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1095 1504 1805 2382
+bboxes size is  107 516 231 808
+patch_y1-patch_y0, patch_x1-patch_x0 is  409 577
+bboxes height and width is  409 577
+-----rotation the patch_real-----
+Running epoch 0:  77%|#######7  | 75/97 [01:32<00:28,  1.30s/it]
+--------------datadirs: IMG_4819.txt---------------
+ratio 0.8470538592981112
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([869.0494], device='cuda:0') tensor([2158.5400], device='cuda:0') tensor([1998.9506], device='cuda:0') tensor([2957.4600], device='cuda:0')
+height, width is  [399.45996] [564.95056]
+bboxes is  [[ -44  -87 1084  711]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.9204], device='cuda:0') tensor([0.7811], device='cuda:0')
+box_height, box_width is  798 1128
+y0, y1, x0, x1 is  2158 2956 869 1997
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2158 2956 869 1997
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  44 45 87 87
+applier.size() is  torch.Size([1, 3, 798, 1129])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2158 2956 869 1997
+y0, y1, x0, x1 is  2158 2956 869 1997
+-----rotation the patch_real-----
+Running epoch 0:  78%|#######8  | 76/97 [01:33<00:26,  1.28s/it]
+--------------datadirs: IMG_4902.txt---------------
+ratio 0.5310898356867926
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([576.4088], device='cuda:0') tensor([819.4608], device='cuda:0') tensor([1177.5912], device='cuda:0') tensor([1244.5393], device='cuda:0')
+height, width is  [212.53928] [300.59122]
+bboxes is  [[219  99 820 524]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.7299], device='cuda:0') tensor([1.4680], device='cuda:0')
+box_height, box_width is  425 601
+y0, y1, x0, x1 is  819 1244 576 1177
+-----boundary value discussion-----
+y0, y1, x0, x1 is  819 1244 576 1177
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  819 1244 576 1177
+bboxes size is  99 524 219 820
+patch_y1-patch_y0, patch_x1-patch_x0 is  425 601
+bboxes height and width is  425 601
+-----rotation the patch_real-----
+Running epoch 0:  79%|#######9  | 77/97 [01:34<00:24,  1.24s/it]
+--------------datadirs: IMG_4908.txt---------------
+ratio 0.37241022027185616
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([947.9571], device='cuda:0') tensor([1813.1312], device='cuda:0') tensor([1270.0428], device='cuda:0') tensor([2040.8688], device='cuda:0')
+height, width is  [113.868774] [161.04288]
+bboxes is  [[358 198 681 425]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([3.2290], device='cuda:0') tensor([2.7400], device='cuda:0')
+box_height, box_width is  227 323
+y0, y1, x0, x1 is  1813 2040 947 1270
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1813 2040 947 1270
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1813 2040 947 1270
+bboxes size is  198 425 358 681
+patch_y1-patch_y0, patch_x1-patch_x0 is  227 323
+bboxes height and width is  227 323
+-----rotation the patch_real-----
+Running epoch 0:  80%|########  | 78/97 [01:35<00:23,  1.23s/it]
+--------------datadirs: IMG_4909.txt---------------
+ratio 0.7541439204877743
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([464.9881], device='cuda:0') tensor([1122.8401], device='cuda:0') tensor([2403.0120], device='cuda:0') tensor([2493.1599], device='cuda:0')
+height, width is  [685.1599] [969.0119]
+bboxes is  [[-449 -373 1489  997]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.5366], device='cuda:0') tensor([0.4554], device='cuda:0')
+box_height, box_width is  1370 1938
+y0, y1, x0, x1 is  1122 2492 464 2402
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1122 2492 464 2402
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  449 449 373 373
+applier.size() is  torch.Size([1, 3, 1370, 1938])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1122 2492 464 2402
+y0, y1, x0, x1 is  1122 2492 464 2402
+-----rotation the patch_real-----
+Running epoch 0:  81%|########1 | 79/97 [01:37<00:22,  1.24s/it]
+--------------datadirs: IMG_4768.txt---------------
+ratio 0.9864099160495233
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([2393.9280], device='cuda:0') tensor([1368.0098], device='cuda:0') tensor([2886.0720], device='cuda:0') tensor([1715.9902], device='cuda:0')
+height, width is  [173.99023] [246.07202]
+bboxes is  [[273 138 766 485]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.1132], device='cuda:0') tensor([1.7932], device='cuda:0')
+box_height, box_width is  347 493
+y0, y1, x0, x1 is  1368 1715 2393 2886
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1368 1715 2393 2886
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1368 1715 2393 2886
+bboxes size is  138 485 273 766
+patch_y1-patch_y0, patch_x1-patch_x0 is  347 493
+bboxes height and width is  347 493
+-----rotation the patch_real-----
+Running epoch 0:  82%|########2 | 80/97 [01:38<00:20,  1.21s/it]
+--------------datadirs: IMG_4875.txt---------------
+ratio 0.763440462951316
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([380.2095], device='cuda:0') tensor([1991.2593], device='cuda:0') tensor([1281.7904], device='cuda:0') tensor([2628.7407], device='cuda:0')
+height, width is  [318.74072] [450.79044]
+bboxes is  [[ 69  -6 970 630]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.1535], device='cuda:0') tensor([0.9789], device='cuda:0')
+box_height, box_width is  636 901
+y0, y1, x0, x1 is  1991 2627 380 1281
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1991 2627 380 1281
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1991 2627 380 1281
+bboxes size is  -6 630 69 970
+patch_y1-patch_y0, patch_x1-patch_x0 is  636 901
+bboxes height and width is  636 901
+datadirs is  ('IMG_4875.txt',)
+Running epoch 0:  84%|########3 | 81/97 [01:38<00:15,  1.05it/s]
+--------------datadirs: IMG_4842.txt---------------
+ratio 0.42034635899788914
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1939.3768], device='cuda:0') tensor([1591.6099], device='cuda:0') tensor([2350.6230], device='cuda:0') tensor([1882.3901], device='cuda:0')
+height, width is  [145.39014] [205.62311]
+bboxes is  [[314 166 725 457]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.5289], device='cuda:0') tensor([2.1460], device='cuda:0')
+box_height, box_width is  291 411
+y0, y1, x0, x1 is  1591 1882 1939 2350
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1591 1882 1939 2350
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1591 1882 1939 2350
+bboxes size is  166 457 314 725
+patch_y1-patch_y0, patch_x1-patch_x0 is  291 411
+bboxes height and width is  291 411
+-----rotation the patch_real-----
+Running epoch 0:  85%|########4 | 82/97 [01:39<00:15,  1.06s/it]
+--------------datadirs: IMG_4903.txt---------------
+ratio 0.5179776963585381
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([498.4759], device='cuda:0') tensor([2554.9426], device='cuda:0') tensor([1061.5242], device='cuda:0') tensor([2953.0574], device='cuda:0')
+height, width is  [199.05737] [281.52417]
+bboxes is  [[238 112 801 511]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.8471], device='cuda:0') tensor([1.5674], device='cuda:0')
+box_height, box_width is  399 563
+y0, y1, x0, x1 is  2554 2953 498 1061
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2554 2953 498 1061
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2554 2953 498 1061
+bboxes size is  112 511 238 801
+patch_y1-patch_y0, patch_x1-patch_x0 is  399 563
+bboxes height and width is  399 563
+-----rotation the patch_real-----
+Running epoch 0:  86%|########5 | 83/97 [01:41<00:15,  1.12s/it]
+--------------datadirs: IMG_4755.txt---------------
+ratio 0.6451235444795858
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1561.9436], device='cuda:0') tensor([1054.7985], device='cuda:0') tensor([2428.0564], device='cuda:0') tensor([1667.2015], device='cuda:0')
+height, width is  [306.20154] [433.0564]
+bboxes is  [[ 86   5 953 618]]
+-----paste the resized patch on the car-----
+size[3] > size[2]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.2008], device='cuda:0') tensor([1.0189], device='cuda:0')
+box_height, box_width is  613 867
+y0, y1, x0, x1 is  1054 1667 1561 2428
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1054 1667 1561 2428
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1054 1667 1561 2428
+bboxes size is  5 618 86 953
+patch_y1-patch_y0, patch_x1-patch_x0 is  613 867
+bboxes height and width is  613 867
+-----rotation the patch_real-----
+Running epoch 0:  87%|########6 | 84/97 [01:42<00:15,  1.17s/it]
+--------------datadirs: IMG_4811.txt---------------
+ratio 0.7911957038054103
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([933.2223], device='cuda:0') tensor([3076.6421], device='cuda:0') tensor([1898.7777], device='cuda:0') tensor([3759.3579], device='cuda:0')
+height, width is  [341.3579] [482.7777]
+bboxes is  [[  37  -29 1002  653]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.0771], device='cuda:0') tensor([0.9140], device='cuda:0')
+box_height, box_width is  682 965
+y0, y1, x0, x1 is  3076 3758 933 1898
+-----boundary value discussion-----
+y0, y1, x0, x1 is  3076 3758 933 1898
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  3076 3758 933 1898
+bboxes size is  -29 653 37 1002
+patch_y1-patch_y0, patch_x1-patch_x0 is  682 965
+bboxes height and width is  682 965
+datadirs is  ('IMG_4811.txt',)
+Running epoch 0:  88%|########7 | 85/97 [01:42<00:11,  1.07it/s]
+--------------datadirs: IMG_4798.txt---------------
+ratio 0.6624558435639343
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1852.6410], device='cuda:0') tensor([1889.4027], device='cuda:0') tensor([2629.3591], device='cuda:0') tensor([2438.5974], device='cuda:0')
+height, width is  [274.59735] [388.35907]
+bboxes is  [[131  37 908 586]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.3390], device='cuda:0') tensor([1.1362], device='cuda:0')
+box_height, box_width is  549 777
+y0, y1, x0, x1 is  1889 2438 1852 2629
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1889 2438 1852 2629
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1889 2438 1852 2629
+bboxes size is  37 586 131 908
+patch_y1-patch_y0, patch_x1-patch_x0 is  549 777
+bboxes height and width is  549 777
+-----rotation the patch_real-----
+Running epoch 0:  89%|########8 | 86/97 [01:44<00:11,  1.07s/it]
+--------------datadirs: IMG_4850.txt---------------
+ratio 0.3903432046425449
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([2023.6752], device='cuda:0') tensor([1085.1743], device='cuda:0') tensor([2532.3250], device='cuda:0') tensor([1444.8257], device='cuda:0')
+height, width is  [179.82568] [254.32489]
+bboxes is  [[265 132 774 491]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.0446], device='cuda:0') tensor([1.7350], device='cuda:0')
+box_height, box_width is  359 509
+y0, y1, x0, x1 is  1085 1444 2023 2532
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1085 1444 2023 2532
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1085 1444 2023 2532
+bboxes size is  132 491 265 774
+patch_y1-patch_y0, patch_x1-patch_x0 is  359 509
+bboxes height and width is  359 509
+-----rotation the patch_real-----
+Running epoch 0:  90%|########9 | 87/97 [01:45<00:11,  1.16s/it]
+--------------datadirs: IMG_4794.txt---------------
+ratio 0.6187980630409539
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1929.0487], device='cuda:0') tensor([1742.5093], device='cuda:0') tensor([2614.9512], device='cuda:0') tensor([2227.4907], device='cuda:0')
+height, width is  [242.49072] [342.95123]
+bboxes is  [[177  69 862 554]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.5163], device='cuda:0') tensor([1.2866], device='cuda:0')
+box_height, box_width is  485 685
+y0, y1, x0, x1 is  1742 2227 1929 2614
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1742 2227 1929 2614
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1742 2227 1929 2614
+bboxes size is  69 554 177 862
+patch_y1-patch_y0, patch_x1-patch_x0 is  485 685
+bboxes height and width is  485 685
+-----rotation the patch_real-----
+Running epoch 0:  91%|######### | 88/97 [01:46<00:10,  1.15s/it]
+--------------datadirs: IMG_4866.txt---------------
+ratio 0.49289876120978826
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1557.8009], device='cuda:0') tensor([966.5157], device='cuda:0') tensor([2334.1992], device='cuda:0') tensor([1515.4843], device='cuda:0')
+height, width is  [274.48425] [388.19916]
+bboxes is  [[131  37 908 586]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.3395], device='cuda:0') tensor([1.1367], device='cuda:0')
+box_height, box_width is  549 777
+y0, y1, x0, x1 is  966 1515 1557 2334
+-----boundary value discussion-----
+y0, y1, x0, x1 is  966 1515 1557 2334
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  966 1515 1557 2334
+bboxes size is  37 586 131 908
+patch_y1-patch_y0, patch_x1-patch_x0 is  549 777
+bboxes height and width is  549 777
+-----rotation the patch_real-----
+Running epoch 0:  92%|#########1| 89/97 [01:47<00:08,  1.12s/it]
+--------------datadirs: IMG_4856.txt---------------
+ratio 0.663899204230038
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([931.1928], device='cuda:0') tensor([969.4293], device='cuda:0') tensor([2516.8071], device='cuda:0') tensor([2090.5708], device='cuda:0')
+height, width is  [560.5708] [792.8071]
+bboxes is  [[-272 -248 1312  872]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.6559], device='cuda:0') tensor([0.5566], device='cuda:0')
+box_height, box_width is  1120 1584
+y0, y1, x0, x1 is  969 2089 931 2515
+-----boundary value discussion-----
+y0, y1, x0, x1 is  969 2089 931 2515
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  272 273 248 249
+applier.size() is  torch.Size([1, 3, 1121, 1585])
+patch_y0, patch_y1, patch_x0, patch_x1 is  969 2089 931 2515
+y0, y1, x0, x1 is  969 2089 931 2515
+-----rotation the patch_real-----
+Running epoch 0:  93%|#########2| 90/97 [01:48<00:07,  1.10s/it]
+--------------datadirs: IMG_4790.txt---------------
+ratio 0.6370379734143348
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1079.2545], device='cuda:0') tensor([1916.1799], device='cuda:0') tensor([2266.7456], device='cuda:0') tensor([2755.8201], device='cuda:0')
+height, width is  [419.82007] [593.74554]
+bboxes is  [[ -73 -107 1113  731]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([0.8758], device='cuda:0') tensor([0.7432], device='cuda:0')
+box_height, box_width is  838 1186
+y0, y1, x0, x1 is  1916 2754 1079 2265
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1916 2754 1079 2265
+-----scale the patch-----
+------------ zoom in ------------
+padx0, padx1, pady0, pady1 is  73 74 107 108
+applier.size() is  torch.Size([1, 3, 839, 1187])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1916 2754 1079 2265
+y0, y1, x0, x1 is  1916 2754 1079 2265
+-----rotation the patch_real-----
+Running epoch 0:  94%|#########3| 91/97 [01:49<00:06,  1.10s/it]
+--------------datadirs: IMG_4900.txt---------------
+ratio 0.3641593659218972
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([934.2327], device='cuda:0') tensor([2551.5886], device='cuda:0') tensor([1209.7673], device='cuda:0') tensor([2746.4114], device='cuda:0')
+height, width is  [97.41138] [137.76733]
+bboxes is  [[382 214 657 409]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([3.7745], device='cuda:0') tensor([3.2029], device='cuda:0')
+box_height, box_width is  195 275
+y0, y1, x0, x1 is  2551 2746 934 1209
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2551 2746 934 1209
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2551 2746 934 1209
+bboxes size is  214 409 382 657
+patch_y1-patch_y0, patch_x1-patch_x0 is  195 275
+bboxes height and width is  195 275
+-----rotation the patch_real-----
+Running epoch 0:  95%|#########4| 92/97 [01:50<00:05,  1.08s/it]
+--------------datadirs: IMG_4890.txt---------------
+ratio 0.6860355444425321
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1190.8887], device='cuda:0') tensor([2186.9719], device='cuda:0') tensor([1997.1113], device='cuda:0') tensor([2757.0281], device='cuda:0')
+height, width is  [285.02808] [403.11133]
+bboxes is  [[116  26 923 597]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.2900], device='cuda:0') tensor([1.0946], device='cuda:0')
+box_height, box_width is  571 807
+y0, y1, x0, x1 is  2186 2757 1190 1997
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2186 2757 1190 1997
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2186 2757 1190 1997
+bboxes size is  26 597 116 923
+patch_y1-patch_y0, patch_x1-patch_x0 is  571 807
+bboxes height and width is  571 807
+-----rotation the patch_real-----
+Running epoch 0:  96%|#########5| 93/97 [01:52<00:04,  1.09s/it]
+--------------datadirs: IMG_4845.txt---------------
+ratio 0.4241066303140118
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1475.4967], device='cuda:0') tensor([2471.9573], device='cuda:0') tensor([2038.5033], device='cuda:0') tensor([2870.0427], device='cuda:0')
+height, width is  [199.04272] [281.5033]
+bboxes is  [[238 112 801 511]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.8472], device='cuda:0') tensor([1.5675], device='cuda:0')
+box_height, box_width is  399 563
+y0, y1, x0, x1 is  2471 2870 1475 2038
+-----boundary value discussion-----
+y0, y1, x0, x1 is  2471 2870 1475 2038
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  2471 2870 1475 2038
+bboxes size is  112 511 238 801
+patch_y1-patch_y0, patch_x1-patch_x0 is  399 563
+bboxes height and width is  399 563
+-----rotation the patch_real-----
+Running epoch 0:  97%|#########6| 94/97 [01:53<00:03,  1.09s/it]
+--------------datadirs: IMG_4814.txt---------------
+ratio 0.7232539471572494
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1106.9597], device='cuda:0') tensor([1010.1635], device='cuda:0') tensor([2071.0403], device='cuda:0') tensor([1691.8365], device='cuda:0')
+height, width is  [340.83655] [482.04028]
+bboxes is  [[  37  -28 1002  652]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.0787], device='cuda:0') tensor([0.9154], device='cuda:0')
+box_height, box_width is  680 965
+y0, y1, x0, x1 is  1010 1690 1106 2071
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1010 1690 1106 2071
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1010 1690 1106 2071
+bboxes size is  -28 652 37 1002
+patch_y1-patch_y0, patch_x1-patch_x0 is  680 965
+bboxes height and width is  680 965
+datadirs is  ('IMG_4814.txt',)
+Running epoch 0:  98%|#########7| 95/97 [01:53<00:01,  1.16it/s]
+--------------datadirs: IMG_4844.txt---------------
+ratio 0.4055003818102935
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1466.6277], device='cuda:0') tensor([1120.9489], device='cuda:0') tensor([2001.3723], device='cuda:0') tensor([1499.0511], device='cuda:0')
+height, width is  [189.05115] [267.3723]
+bboxes is  [[252 122 787 501]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([1.9449], device='cuda:0') tensor([1.6503], device='cuda:0')
+box_height, box_width is  379 535
+y0, y1, x0, x1 is  1120 1499 1466 2001
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1120 1499 1466 2001
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1120 1499 1466 2001
+bboxes size is  122 501 252 787
+patch_y1-patch_y0, patch_x1-patch_x0 is  379 535
+bboxes height and width is  379 535
+-----rotation the patch_real-----
+Running epoch 0:  99%|#########8| 96/97 [01:54<00:00,  1.07it/s]
+--------------datadirs: IMG_4884.txt---------------
+ratio 0.5726797281283077
+--------------patch transform-------------
+adv_patch.size() is  torch.Size([3, 624, 1040])
+patch_bboxes is  tensor([1946.7155], device='cuda:0') tensor([1683.8595], device='cuda:0') tensor([2439.2844], device='cuda:0') tensor([2032.1405], device='cuda:0')
+height, width is  [174.1405] [246.28448]
+bboxes is  [[273 137 766 486]]
+-----paste the resized patch on the car-----
+size[2] > size[3]
+patch_real.size() is  torch.Size([1, 3, 4032, 4032])
+sx, sy is  tensor([2.1114], device='cuda:0') tensor([1.7917], device='cuda:0')
+box_height, box_width is  349 493
+y0, y1, x0, x1 is  1683 2032 1946 2439
+-----boundary value discussion-----
+y0, y1, x0, x1 is  1683 2032 1946 2439
+-----scale the patch-----
+---------- zoom out ------------
+applier.size() is  torch.Size([1, 3, 624, 1040])
+patch_y0, patch_y1, patch_x0, patch_x1 is  1683 2032 1946 2439
+bboxes size is  137 486 273 766
+patch_y1-patch_y0, patch_x1-patch_x0 is  349 493
+bboxes height and width is  349 493
+-----rotation the patch_real-----
+
+
+Running epoch 0: 100%|##########| 97/97 [01:55<00:00,  1.01it/s]Running epoch 0: 100%|##########| 97/97 [01:55<00:00,  1.19s/it]
+ep_loss is  tensor(0.6722, device='cuda:0', grad_fn=<DivBackward0>)
+  Epoch NR:  0
+Epoch Loss:  tensor(0.6722, device='cuda:0', grad_fn=<DivBackward0>)
